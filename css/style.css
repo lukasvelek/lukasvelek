@@ -1,3 +1,160 @@
+/* ========== GENERAL ========== */
+
 body {
     overflow-x: hidden;
 }
+
+/* ========== END OF GENERAL ========== */
+
+
+/* ========== COMMON ========== */
+
+#center-align {
+    text-align: center;
+}
+
+.center-align {
+    text-align: center;
+}
+
+/* ========== END OF COMMON ========== */
+
+
+/* ========== INTRO SECTION ========== */
+
+#intro-section {
+    background-color: #2f2f2f;
+
+    color: white;
+
+    padding-top: 17.15%;
+    padding-bottom: 17.15%;
+}
+
+#intro-section-common {
+    color: white;
+    
+    font-size: 50px;
+
+    margin: auto;
+
+    width: 25%;
+}
+
+#intro-section-description {
+    font-size: 35px;
+
+    color: #9f9f9f;
+}
+
+/* ========== END OF INTRO SECTION ========== */
+
+
+/* ========== QUICK LINKS SECTION ========== */
+
+#quick-links-section {
+    background-color: #dfdfdf;
+
+    color: #2f2f2f;
+
+    padding-bottom: 5%;
+}
+
+#quick-links-section-title {
+    font-size: 35px;
+
+    color: #2f2f2f;
+
+    margin: auto;
+
+    width: 25%;
+}
+
+#quick-links-section-items {
+    margin: auto auto;
+
+    width: 90%;
+}
+
+#quick-link-item {
+    color: #2f2f2f;
+
+    font-size: 30px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    margin: 5px;
+
+    background-color: #cdcdcd;
+
+    backdrop-filter: blur(1px);
+}
+
+#quick-link-item a {
+    color: #2f2f2f;
+
+    text-decoration: none;
+}
+
+#quick-link-item a:hover {
+    color: black;
+}
+
+/* ========== END OF QUICK LINKS SECTION ========== */
+
+
+/* ========== CURRENT PROJECTS SECTION ========== */
+
+#current-projects-section {
+    background-color: #dfdfdf;
+}
+
+#current-projects-section-title {
+    font-size: 35px;
+
+    color: #2f2f2f;
+
+    margin: auto;
+
+    width: 25%;
+}
+
+#current-projects-section-items {
+    margin: auto auto;
+
+    width: 90%;
+}
+
+#current-projects-item {
+    color: #2f2f2f;
+
+    font-size: 30px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    margin: 5px;
+
+    background-color: #cdcdcd;
+
+    backdrop-filter: blur(1px);
+}
+
+#current-projects-item a {
+    color: #2f2f2f;
+
+    text-decoration: none;
+}
+
+#current-projects-item a:hover {
+    color: black;
+}
+
+#current-projects-item i {
+    font-size: 25px;
+}
+
+/* ========== END OF CURRENT PROJECTS SECTION ========== */
