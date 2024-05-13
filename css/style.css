@@ -158,3 +158,84 @@ body {
 }
 
 /* ========== END OF CURRENT PROJECTS SECTION ========== */
+
+
+/* ========== ABOUT ME INTRO SECTION ========== */
+
+#about-me-intro-section {
+    background-color: #2f2f2f;
+
+    color: white;
+
+    font-size: 40px;
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#about-me-intro-section-common {
+    margin: auto;
+
+    color: white;
+
+    width: 25%;
+}
+
+#about-me-intro-section-description {
+    font-size: 35px;
+
+    color: #dfdfdf;
+}
+
+/* ========== END OF ABOUT ME INTRO SECTION ========== */
+
+
+/* ========== ABOUT ME CONTENT ========== */
+
+#about-me-content {
+    background-color: #dfdfdf;
+
+    top: 10%;
+    bottom: 10%;
+
+    font-size: 25px;
+}
+
+#about-me-content li {
+    font-size: 23px;
+}
+
+#about-me-content-item {
+    margin: 5px;
+}
+
+#about-me-content-item-text {
+    font-size: 21px;
+}
+
+/* ========== END OF ABOUT ME CONTENT ========== */
+
+
+/* ========== NAVBAR ========== */
+
+#navbar {
+    background-color: #1c1c1c;
+
+    padding: 1%;
+
+    font-size: 25px;
+}
+
+#navbar-item a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px;
+}
+
+#navbar-item a:hover {
+    color: #dfdfdf;
+}
+
+/* ========== END OF NAVBAR ========== */
