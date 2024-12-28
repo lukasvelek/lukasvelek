@@ -239,3 +239,29 @@ body {
 }
 
 /* ========== END OF NAVBAR ========== */
+
+
+/* ========== PROJECT CONTENT ========== */
+
+#project-content {
+    background-color: #dfdfdf;
+
+    top: 10%;
+    bottom: 10%;
+
+    font-size: 25px;
+}
+
+#project-content-item {
+    margin: 5px;
+}
+
+#project-content-item-title {
+    font-size: 25px;
+}
+
+#project-content-item-text {
+    font-size: 21px;
+}
+
+/* ========== END OF PROJECT CONTENT ========== */
