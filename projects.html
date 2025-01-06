@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Lukas Velek</title>
+        <title>Lukas Velek - Projects</title>
         <script
             src="https://code.jquery.com/jquery-3.7.1.js"
             integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -17,9 +17,9 @@
                     <div class="col-md-1 col-lg-2"></div>
 
                     <div class="col-md col-lg">
-                        <a class="navbar-link-current" href="index.html">Home</a>
+                        <a class="navbar-link" href="index.html">Home</a>
                         <a class="navbar-link" href="about-me.html">About</a>
-                        <a class="navbar-link" href="projects.html">Projects</a>
+                        <a class="navbar-link-current" href="projects.html">Projects</a>
                         <a class="navbar-link" href="tech-stack.html">Tech stack</a>
                     </div>
 
@@ -54,15 +54,29 @@
                     <div class="col-md-1 col-lg-2"></div>
 
                     <div class="col-md col-lg">
-                        <p class="page-content-title">
-                            Hi, I'm Lukas! I'm a IT specialist with passion for development of website applications.
-                        </p>
+                        <div class="row">
+                            <div class="col-md col-lg">
+                                <p class="page-content-title">
+                                    My public projects
+                                </p>
+        
+                                <p class="page-content-text">
+                                    As you will find out in the <a class="page-content-text-link" href="tech-stack.html">tech stack</a> page, I mostly focus on developing
+                                    website applications using PHP.
+                                    <br>
+                                    I created my own framework that is implemented and used by these projects.
+                                </p>
+                            </div>
+                        </div>
 
-                        <p class="page-content-text">
-                            Here you can find some information <a class="page-content-text-link" href="about-me.html">about me</a>,
-                            my <a class="page-content-text-link" href="tech-stack.html">tech stack</a>
-                            and my public <a class="page-content-text-link" href="projects.html">projects</a>.
-                        </p>
+                        <br>
+
+                        <div class="row">
+                            <!-- PROJECTS -->
+                            <div class="col-md col-lg" id="projects-skydocu">
+                                <p class="page-content-subtitle">SkyDocu</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-md-1 col-lg-2"></div>
@@ -75,6 +89,10 @@
 
                 <br>
             </div>
+        </div>
+
+        <div id="projects-skydocu-content">
+            <p class="page-content-text">SkyDocu</p>
         </div>
     </body>
 
@@ -99,6 +117,7 @@
 
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript">
+            isProjects = true;
             init();
         </script>
     </footer>
