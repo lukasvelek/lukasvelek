@@ -16,3 +16,11 @@ body {
 .right, #right {
     text-align: right;
 }
+
+.footer-text {
+    font-size: 15px;
+}
+
+footer {
+    color: rgb(200, 200, 200);
+}
