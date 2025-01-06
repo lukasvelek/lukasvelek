@@ -1,4 +1,5 @@
 var isProjects = false;
+var isAboutMe = false;
 
 function init() {
     // Set the copyright year
@@ -22,6 +23,20 @@ function init() {
                 openModal(modalName);
             });
         });
+    }
+
+    if(isAboutMe) {
+        const currentDate = new Date();
+        const birthDate = new Date("01/01/2001");
+
+        var age = currentDate.getFullYear() - birthDate.getFullYear();
+        var _m = currentDate.getMonth() - birthDate.getMonth();
+
+        if(_m < 0 || (_m === 0)) {
+            age--;
+        }
+
+        $("#about-me-my-age").html(age);
     }
 }
 
