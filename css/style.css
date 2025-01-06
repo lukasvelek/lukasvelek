@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: rgb(50,50,50);
+    background-color: rgb(220, 220, 220);
 
     overflow-x: hidden;
 }
@@ -17,13 +17,15 @@ body {
     text-align: right;
 }
 
+/* FOOTER */
 .footer-text {
     font-size: 15px;
 }
 
 footer {
-    color: rgb(200, 200, 200);
+    color: rgb(100, 100, 100);
 }
+/* END OF FOOTER */
 
 /* NAVIGATION BAR */
 .navbar-link, .navbar-link-current {
@@ -33,24 +35,66 @@ footer {
 }
 
 .navbar-link {
-    color: rgb(200, 200, 200);
+    color: rgb(80, 80, 80);
 }
 
 .navbar-link-current {
-    color: rgb(180, 180, 180);
+    color: rgb(100, 100, 100);
+
+    text-decoration: underline;
 }
 
 .navbar-link:hover, .navbar-link-current:hover {
-    color: rgb(150, 150, 150);
+    color: rgb(120, 120, 120);
 }
 
 #navbar div {
     padding: 10px;
 
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(200, 200, 200);
 }
 
 #navbar a {
     margin-right: 10px;
 }
 /* END OF NAVIGATION BAR */
+
+/* PAGE INTRO */
+.page-intro-subtitle {
+    color: rgb(90, 90, 90);
+
+    font-size: 20px;
+}
+
+#page-intro, #page-intro hr {
+    color: rgb(80, 80, 80);
+}
+/* END OF PAGE INTRO */
+
+#page-content {
+    color: rgb(80, 80, 80);
+}
+
+.page-content-text-link {
+    color: rgb(100, 100, 100);
+
+    font-size: 17px;
+
+    text-decoration: underline;
+}
+
+.page-content-text-link:hover {
+    color: rgb(120, 120, 120);
+}
+
+.page-content-text {
+    font-size: 17px;
+}
+
+.page-content-title {
+    font-size: 20px;
+}
+
+.division-banner {
+    height: 200px;
+}
