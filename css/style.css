@@ -24,3 +24,33 @@ body {
 footer {
     color: rgb(200, 200, 200);
 }
+
+/* NAVIGATION BAR */
+.navbar-link, .navbar-link-current {
+    font-size: 17px;
+    
+    text-decoration: none;
+}
+
+.navbar-link {
+    color: rgb(200, 200, 200);
+}
+
+.navbar-link-current {
+    color: rgb(180, 180, 180);
+}
+
+.navbar-link:hover, .navbar-link-current:hover {
+    color: rgb(150, 150, 150);
+}
+
+#navbar div {
+    padding: 10px;
+
+    background-color: rgb(100, 100, 100);
+}
+
+#navbar a {
+    margin-right: 10px;
+}
+/* END OF NAVIGATION BAR */
