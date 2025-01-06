@@ -102,3 +102,24 @@ footer {
 .division-banner {
     height: 200px;
 }
+
+div[id^="projects-showcase"] {
+    cursor: pointer;
+}
+
+div[id^="projects-content"] {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.modal-close-button {
+    font-size: 25px;
+
+    color: rgb(80, 80, 80);
+
+    text-decoration: none;
+}
+
+.modal-close-button:hover {
+    color: rgb(50, 50, 50);
+}
