@@ -6,7 +6,9 @@ function init() {
     
     if(isProjects) {
         const projects = [
-            "skydocu"
+            "skydocu",
+            "dms",
+            "topics"
         ];
 
         // Hide projects contents
