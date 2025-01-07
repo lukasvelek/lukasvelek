@@ -1,98 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Lukas Velek</title>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id="intro-section">
-            <div id="intro-section-common" class="center-align">
-                <span id="intro-section-title">
-                    Lukas Velek
-                </span>
+        <div class="row">
+            <div class="col-md">
+                <!-- HEADER / NAVIGATION BAR -->
+                <div class="row" id="navbar">
+                    <div class="col-md-1 col-lg-2"></div>
 
-                <hr>
-
-                <span id="intro-section-description">
-                    <i>
-                        Self taught web developer, gamer and IT specialist
-                    </i>
-                </span>
-            </div>
-        </div>
-
-        <div id="quick-links-section">
-            <div id="quick-links-section-title" class="center-align">
-                <span>
-                    Quick links
-                </span>
-
-                <hr>
-            </div>
-
-            <div id="quick-links-section-items">
-                <div class="row">
-                    <div class="col-md" id="quick-link-item">
-                        <a href="/lukasvelek/projects/">
-                            Projects
-                        </a>
+                    <div class="col-md col-lg">
+                        <a class="navbar-link-current" href="index.html">Home</a>
+                        <a class="navbar-link" href="about-me.html">About</a>
+                        <a class="navbar-link" href="projects.html">Projects</a>
+                        <a class="navbar-link" href="tech-stack.html">Tech stack</a>
                     </div>
 
-                    <div class="col-md" id="quick-link-item">
-                        <a href="about-me.html">
-                            About me
-                        </a>
-                    </div>
-
-                    <!--<div class="col-md" id="quick-link-item">
-                        <a href="/lukasvelek/blog/">
-                            My blog
-                        </a>
-                    </div>-->
+                    <div class="col-md-1 col-lg-2"></div>
                 </div>
-            </div>
-        </div>
+                <!-- END OF HEADER / NAVIGATION BAR -->
 
-        <div id="current-projects-section">
-            <div id="current-projects-section-title" class="center-align">
-                <span>
-                    Current projects
-                </span>
+                <br>
 
-                <hr>
-            </div>
+                <!-- PAGE INTRO -->
+                <div class="row" id="page-intro">
+                    <div class="col-md-1 col-lg-2"></div>
 
-            <div id="current-projects-section-items">
-                <div class="row">
-                    <div class="col-md" id="current-projects-item">
-                        <a href="/lukasvelek/projects/skydocu.html">
-                            SkyDocu
-                        </a>
-
+                    <div class="col-md col-lg" id="center">
+                        <img src="src/profile-picture.png" alt="Profile picture showing author" width="256px">
                         <br>
-
-                        <i>
-                            Cloud-based containerized Document Management System
-                        </i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md" id="current-projects-item">
-                        <a href="/lukasvelek/projects/dms.html">
-                            DMS
-                        </a>
-
                         <br>
-
-                        <i>
-                            Document Management System
-                        </i>
+                        <h2 class="page-intro-title">Lukas Velek</h2>
+                        <hr>
+                        <h3 class="page-intro-subtitle">IT specialist, programmer, gamer</h3>
                     </div>
+
+                    <div class="col-md-1 col-lg-2"></div>
                 </div>
+                <!-- END OF PAGE INTRO -->
+
+                <br>
+
+                <div class="division-banner"></div>
+
+                <br>
+
+                <!-- PAGE CONTENT -->
+                <div class="row" id="page-content">
+                    <div class="col-md-1 col-lg-2"></div>
+
+                    <div class="col-md col-lg">
+                        <p class="page-content-title">
+                            Hi, I'm Lukas! I'm a IT specialist with passion for development of website applications.
+                        </p>
+
+                        <p class="page-content-text">
+                            Here you can find some information <a class="page-content-text-link" href="about-me.html">about me</a>,
+                            my <a class="page-content-text-link" href="tech-stack.html">tech stack</a>
+                            and my public <a class="page-content-text-link" href="projects.html">projects</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-1 col-lg-2"></div>
+                </div>
+                <!-- END OF PAGE CONTENT -->
+
+                <br>
+
+                <div class="division-banner"></div>
+
+                <br>
             </div>
         </div>
     </body>
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-1 col-lg-2"></div>
+
+            <div class="col-md col-lg">
+                <!-- FOOTER DATA -->
+
+                <p class="footer-text">
+                    Copyright &copy; <span id="footer-text-date"></span> Lukas Velek
+                </p>
+
+                <!-- END OF FOOTER DATA -->
+            </div>
+
+            <div class="col-md-1 col-lg-2"></div>
+        </div>
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+            init();
+        </script>
+    </footer>
 </html>

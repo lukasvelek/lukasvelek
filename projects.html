@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Lukas Velek - Projects</title>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md">
+                <!-- HEADER / NAVIGATION BAR -->
+                <div class="row" id="navbar">
+                    <div class="col-md-1 col-lg-2"></div>
+
+                    <div class="col-md col-lg">
+                        <a class="navbar-link" href="index.html">Home</a>
+                        <a class="navbar-link" href="about-me.html">About</a>
+                        <a class="navbar-link-current" href="projects.html">Projects</a>
+                        <a class="navbar-link" href="tech-stack.html">Tech stack</a>
+                    </div>
+
+                    <div class="col-md-1 col-lg-2"></div>
+                </div>
+                <!-- END OF HEADER / NAVIGATION BAR -->
+
+                <br>
+
+                <!-- PAGE INTRO -->
+                <div class="row" id="page-intro">
+                    <div class="col-md-1 col-lg-2"></div>
+
+                    <div class="col-md col-lg" id="center">
+                        <img src="src/profile-picture.png" alt="Profile picture showing author" width="128px">
+                        <br>
+                        <br>
+                        <h2 class="page-intro-title">Lukas Velek</h2>
+                        <hr>
+                        <h3 class="page-intro-subtitle">IT specialist, programmer, gamer</h3>
+                    </div>
+
+                    <div class="col-md-1 col-lg-2"></div>
+                </div>
+                <!-- END OF PAGE INTRO -->
+
+                <br>
+
+                <div class="division-banner"></div>
+
+                <br>
+
+                <!-- PAGE CONTENT -->
+                <div class="row" id="page-content">
+                    <div class="col-md-1 col-lg-2"></div>
+
+                    <div class="col-md col-lg">
+                        <div class="row">
+                            <div class="col-md col-lg">
+                                <p class="page-content-title">
+                                    My public projects
+                                </p>
+        
+                                <p class="page-content-text">
+                                    As you will find out in the <a class="page-content-text-link" href="tech-stack.html">tech stack</a> page, I mostly focus on developing
+                                    website applications using PHP.
+                                    <br>
+                                    I created my own framework that is implemented and used by these projects.
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <!-- PROJECTS -->
+                            <div class="col-md col-lg" id="projects-showcase-skydocu">
+                                <p class="page-content-subtitle">SkyDocu</p>
+                            </div>
+
+                            <div class="col-md col-lg" id="projects-showcase-topics">
+                                <p class="page-content-subtitle">Topics</p>
+                            </div>
+
+                            <div class="col-md col-lg" id="projects-showcase-dms">
+                                <p class="page-content-subtitle">DMS (Document Management System)</p>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md col-lg">
+                                <p class="page-content-title">
+                                    My framework
+                                </p>
+
+                                <p class="page-content-text">
+                                    Projects above make use of my own framework.
+                                    <br>
+                                    More information about the framework can be found <a class="page-content-text-link" href="projects/my-framework.html">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-lg-2"></div>
+                </div>
+                <!-- END OF PAGE CONTENT -->
+
+                <br>
+
+                <div class="division-banner"></div>
+
+                <br>
+            </div>
+        </div>
+
+        <span id="modals">
+            <div id="projects-content-skydocu">
+                <div class="row">
+                    <div class="col-md-1 col-lg-1"></div>
+    
+                    <div class="col-md col-lg">
+                        <p class="page-content-title">SkyDocu</p>
+                    </div>
+    
+                    <div class="col-md-1 col-lg-1">
+                        <a class="modal-close-button" href="#" onclick="closeModal('projects-content-skydocu')">&times;</a>
+                    </div>
+                </div>
+    
+                <hr>
+                <br>
+    
+                <div class="row">
+                    <div class="col-md-1 col-lg-1"></div>
+    
+                    <div class="col-md col-lg">
+                        <p class="page-content-text">
+                            SkyDocu is a newer version of DMS but with support for multiple containers and thus theoretically allowing running in cloud.
+                        </p>
+    
+                        <p class="page-content-text">
+                            The application is divided into two parts: <b>Superadministration</b> and <b>Containers</b>.
+                        </p>
+                        
+                        <p class="page-content-subtitle">
+                            Superadministration
+                        </p>
+
+                        <p class="page-content-text">
+                            Superadministration is used for container management, user management and background services management.
+                            Superadministrator can create containers here and see their usage statistics.
+                        </p>
+
+                        <p class="page-content-subtitle">
+                            Container
+                        </p>
+
+                        <p class="page-content-text">
+                            Containers contain the whole DMS functionality. Users can manage documents, metadata, folders and processes here.
+                        </p>
+
+                        <p class="page-content-text">
+                            Each container has its own group. Membership in the container's group allows entering the container.
+                            This functionality means that each container has its own referent - the superadministrator that is responsible for the container.
+                            <br>
+                            However the referent doesn't need to be visible to administrators in the container.
+                        </p>
+    
+                        <p class="page-content-text">
+                            As is it my most recent project (as of January 2025), it uses the newest version of my framework.
+                            <br>
+                            The framework is further described <a class="page-content-text-link" href="projects/my-framework.html">here</a>.
+                        </p>
+    
+                        <p class="page-content-text">
+                            More about the project can be found <a class="page-content-text-link" href="https://github.com/lukasvelek/SkyDocu">here</a>.
+                        </p>
+                    </div>
+    
+                    <div class="col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+    
+            <div id="projects-content-dms">
+                <div class="row">
+                    <div class="col-md-1 col-lg-1"></div>
+    
+                    <div class="col-md col-lg">
+                        <p class="page-content-title">DMS (Document Management System)</p>
+                    </div>
+    
+                    <div class="col-md-1 col-lg-1">
+                        <a class="modal-close-button" href="#" onclick="closeModal('projects-content-dms')">&times;</a>
+                    </div>
+                </div>
+    
+                <hr>
+                <br>
+    
+                <div class="row">
+                    <div class="col-md-1 col-lg-1"></div>
+    
+                    <div class="col-md col-lg">
+                        <p class="page-content-text">
+                            Document Management System or DMS is a web application that allows users to manage their documents in one place.
+                        </p>
+                        
+                        <p class="page-content-text">
+                            It contains a lot of functionalities, i.e.: folders, custom metadata, sharing documents.
+                        </p>
+    
+                        <p class="page-content-text">
+                            It is easily intalled and managed. It is created for on-premise use.
+                        </p>
+    
+                        <p class="page-content-text">
+                            For this project I created my own framework. It allowed using AJAX and processing operations or requests in the background.
+                            My next projects utilize this framework or parts of it.
+                            <br>
+                            The framework is further described <a class="page-content-text-link" href="projects/my-framework.html">here</a>.
+                        </p>
+    
+                        <p class="page-content-text">
+                            More about the project can be found <a class="page-content-text-link" href="https://github.com/lukasvelek/dms">here</a>.
+                        </p>
+                    </div>
+    
+                    <div class="col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+
+            <div id="projects-content-topics">
+                <div class="row">
+                    <div class="col-md-1 col-lg-1"></div>
+    
+                    <div class="col-md col-lg">
+                        <p class="page-content-title">Topics</p>
+                    </div>
+    
+                    <div class="col-md-1 col-lg-1">
+                        <a class="modal-close-button" href="#" onclick="closeModal('projects-content-topics')">&times;</a>
+                    </div>
+                </div>
+    
+                <hr>
+                <br>
+    
+                <div class="row">
+                    <div class="col-md-1 col-lg-1"></div>
+    
+                    <div class="col-md col-lg">
+                        <p class="page-content-text">
+                            Topics was created as a light weight version of other websites that allow users to discuss topics.
+                        </p>
+
+                        <p class="page-content-text">
+                            It allows users to register and create topics (if they don't already exists) and post posts to the topics and discuss with other members.
+                        </p>
+    
+                        <p class="page-content-text">
+                            It utilizes roles for easier management and finer rights management. The application itself has different roles that allow content regulation or other management.
+                        </p>
+    
+                        <p class="page-content-text">
+                            The application itself partially shared codebase with my DMS project. In the beginning of this project I copied all the code from the DMS project
+                            and removed the whole UI and some of the API classes.
+                            <br>
+                            As I was building this project, I added to the framework new functions, updated the existing ones and removed the unused ones.
+                            <br>
+                            The framework is further described <a class="page-content-text-link" href="projects/my-framework.html">here</a>.
+                        </p>
+    
+                        <p class="page-content-text">
+                            More about the project can be found <a class="page-content-text-link" href="https://github.com/lukasvelek/topics">here</a>.
+                        </p>
+                    </div>
+    
+                    <div class="col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+        </span>
+    </body>
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-1 col-lg-2"></div>
+
+            <div class="col-md col-lg">
+                <!-- FOOTER DATA -->
+
+                <p class="footer-text">
+                    Copyright &copy; <span id="footer-text-date"></span> Lukas Velek
+                </p>
+
+                <!-- END OF FOOTER DATA -->
+            </div>
+
+            <div class="col-md-1 col-lg-2"></div>
+        </div>
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+            isProjects = true;
+            init();
+        </script>
+    </footer>
+</html>

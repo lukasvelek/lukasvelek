@@ -1,267 +1,129 @@
-/* ========== GENERAL ========== */
-
 body {
+    font-family: sans-serif;
+    background-color: rgb(220, 220, 220);
+
     overflow-x: hidden;
 }
 
-/* ========== END OF GENERAL ========== */
+.left, #left {
+    text-align: left;
+}
 
-
-/* ========== COMMON ========== */
-
-#center-align {
+.center, #center {
     text-align: center;
 }
 
-.center-align {
-    text-align: center;
+.right, #right {
+    text-align: right;
 }
 
-/* ========== END OF COMMON ========== */
-
-
-/* ========== INTRO SECTION ========== */
-
-#intro-section {
-    background-color: #2f2f2f;
-
-    color: white;
-
-    padding-top: 17.15%;
-    padding-bottom: 17.15%;
+/* FOOTER */
+.footer-text {
+    font-size: 15px;
 }
 
-#intro-section-common {
-    color: white;
+footer {
+    color: rgb(100, 100, 100);
+}
+/* END OF FOOTER */
+
+/* NAVIGATION BAR */
+.navbar-link, .navbar-link-current {
+    font-size: 17px;
     
-    font-size: 50px;
-
-    margin: auto;
-
-    width: 25%;
-}
-
-#intro-section-description {
-    font-size: 35px;
-
-    color: #9f9f9f;
-}
-
-/* ========== END OF INTRO SECTION ========== */
-
-
-/* ========== QUICK LINKS SECTION ========== */
-
-#quick-links-section {
-    background-color: #dfdfdf;
-
-    color: #2f2f2f;
-
-    padding-bottom: 5%;
-}
-
-#quick-links-section-title {
-    font-size: 35px;
-
-    color: #2f2f2f;
-
-    margin: auto;
-
-    width: 25%;
-}
-
-#quick-links-section-items {
-    margin: auto auto;
-
-    width: 90%;
-}
-
-#quick-link-item {
-    color: #2f2f2f;
-
-    font-size: 30px;
-
-    padding: 50px;
-
-    text-align: center;
-
-    margin: 5px;
-
-    background-color: #cdcdcd;
-
-    backdrop-filter: blur(1px);
-}
-
-#quick-link-item a {
-    color: #2f2f2f;
-
     text-decoration: none;
 }
 
-#quick-link-item a:hover {
-    color: black;
+.navbar-link {
+    color: rgb(80, 80, 80);
 }
 
-/* ========== END OF QUICK LINKS SECTION ========== */
+.navbar-link-current {
+    color: rgb(100, 100, 100);
 
-
-/* ========== CURRENT PROJECTS SECTION ========== */
-
-#current-projects-section {
-    background-color: #dfdfdf;
+    text-decoration: underline;
 }
 
-#current-projects-section-title {
-    font-size: 35px;
-
-    color: #2f2f2f;
-
-    margin: auto;
-
-    width: 25%;
+.navbar-link:hover, .navbar-link-current:hover {
+    color: rgb(120, 120, 120);
 }
 
-#current-projects-section-items {
-    margin: auto auto;
-
-    width: 90%;
-}
-
-#current-projects-item {
-    color: #2f2f2f;
-
-    font-size: 30px;
-
-    padding: 50px;
-
-    text-align: center;
-
-    margin: 5px;
-
-    background-color: #cdcdcd;
-
-    backdrop-filter: blur(1px);
-}
-
-#current-projects-item a {
-    color: #2f2f2f;
-
-    text-decoration: none;
-}
-
-#current-projects-item a:hover {
-    color: black;
-}
-
-#current-projects-item i {
-    font-size: 25px;
-}
-
-/* ========== END OF CURRENT PROJECTS SECTION ========== */
-
-
-/* ========== ABOUT ME INTRO SECTION ========== */
-
-#about-me-intro-section {
-    background-color: #2f2f2f;
-
-    color: white;
-
-    font-size: 40px;
-
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
-#about-me-intro-section-common {
-    margin: auto;
-
-    color: white;
-
-    width: 25%;
-}
-
-#about-me-intro-section-description {
-    font-size: 35px;
-
-    color: #dfdfdf;
-}
-
-/* ========== END OF ABOUT ME INTRO SECTION ========== */
-
-
-/* ========== ABOUT ME CONTENT ========== */
-
-#about-me-content {
-    background-color: #dfdfdf;
-
-    top: 10%;
-    bottom: 10%;
-
-    font-size: 25px;
-}
-
-#about-me-content li {
-    font-size: 23px;
-}
-
-#about-me-content-item {
-    margin: 5px;
-}
-
-#about-me-content-item-text {
-    font-size: 21px;
-}
-
-/* ========== END OF ABOUT ME CONTENT ========== */
-
-
-/* ========== NAVBAR ========== */
-
-#navbar {
-    background-color: #1c1c1c;
-
-    padding: 1%;
-
-    font-size: 25px;
-}
-
-#navbar-item a {
-    color: white;
-
-    text-decoration: none;
-
+#navbar div {
     padding: 10px;
+
+    background-color: rgb(200, 200, 200);
 }
 
-#navbar-item a:hover {
-    color: #dfdfdf;
+#navbar a {
+    margin-right: 10px;
+}
+/* END OF NAVIGATION BAR */
+
+/* PAGE INTRO */
+.page-intro-subtitle {
+    color: rgb(90, 90, 90);
+
+    font-size: 20px;
 }
 
-/* ========== END OF NAVBAR ========== */
+#page-intro, #page-intro hr {
+    color: rgb(80, 80, 80);
+}
 
+#page-intro img {
+    border-radius: 100%;
+}
+/* END OF PAGE INTRO */
 
-/* ========== PROJECT CONTENT ========== */
+#page-content {
+    color: rgb(80, 80, 80);
+}
 
-#project-content {
-    background-color: #dfdfdf;
+.page-content-text-link {
+    color: rgb(100, 100, 100);
 
-    top: 10%;
-    bottom: 10%;
+    font-size: 17px;
 
+    text-decoration: underline;
+}
+
+.page-content-text-link:hover {
+    color: rgb(120, 120, 120);
+}
+
+.page-content-text {
+    font-size: 17px;
+}
+
+.page-content-title {
+    font-size: 20px;
+}
+
+.page-content-subtitle {
+    font-size: 18px;
+}
+
+.division-banner {
+    height: 200px;
+}
+
+div[id^="projects-showcase"] {
+    cursor: pointer;
+}
+
+div[id^="projects-content"] {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.modal-close-button {
     font-size: 25px;
+
+    color: rgb(80, 80, 80);
+
+    text-decoration: none;
 }
 
-#project-content-item {
-    margin: 5px;
+.modal-close-button:hover {
+    color: rgb(50, 50, 50);
 }
-
-#project-content-item-title {
-    font-size: 25px;
-}
-
-#project-content-item-text {
-    font-size: 21px;
-}
-
-/* ========== END OF PROJECT CONTENT ========== */
