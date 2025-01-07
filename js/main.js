@@ -1,17 +1,17 @@
 var isProjects = false;
 var isAboutMe = false;
 
+const projects = [
+    "skydocu",
+    "dms",
+    "topics"
+];
+
 function init() {
     // Set the copyright year
     $("#footer-text-date").html((new Date()).getFullYear());
     
     if(isProjects) {
-        const projects = [
-            "skydocu",
-            "dms",
-            "topics"
-        ];
-
         // Hide projects contents
         projects.forEach(function(value, index, array) {
             const modalName = "projects-content-" + value;
@@ -55,4 +55,14 @@ function openModal(_name) {
         .css("width", "80%")
         .css("background-color", "rgb(200, 200, 200)")
     ;
+
+    projects.forEach(function(value, index, array) {
+        const modalName = "projects-content-" + value;
+
+        if(name == ("#" + modalName)) {
+            return;
+        }
+
+        closeModal(modalName);
+    });
 }
