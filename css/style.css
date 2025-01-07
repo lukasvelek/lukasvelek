@@ -69,6 +69,10 @@ footer {
 #page-intro, #page-intro hr {
     color: rgb(80, 80, 80);
 }
+
+#page-intro img {
+    border-radius: 100%;
+}
 /* END OF PAGE INTRO */
 
 #page-content {
