@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Lukas Velek - Projects</title>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md">
+                <!-- HEADER / NAVIGATION BAR -->
+                <div class="row" id="navbar">
+                    <div class="col-md-1 col-lg-2"></div>
+
+                    <div class="col-md col-lg">
+                        <a class="navbar-link" href="../index.html">Home</a>
+                        <a class="navbar-link" href="../about-me.html">About</a>
+                        <a class="navbar-link-current" href="../projects.html">Projects</a>
+                        <a class="navbar-link" href="../tech-stack.html">Tech stack</a>
+                    </div>
+
+                    <div class="col-md-1 col-lg-2"></div>
+                </div>
+                <!-- END OF HEADER / NAVIGATION BAR -->
+
+                <br>
+
+                <!-- PAGE INTRO -->
+                <div class="row" id="page-intro">
+                    <div class="col-md-1 col-lg-2"></div>
+
+                    <div class="col-md col-lg" id="center">
+                        <img src="../src/profile-picture.png" alt="Profile picture showing author" width="128px">
+                        <br>
+                        <br>
+                        <h2 class="page-intro-title">Lukas Velek</h2>
+                        <hr>
+                        <h3 class="page-intro-subtitle">IT specialist, programmer, gamer</h3>
+                    </div>
+
+                    <div class="col-md-1 col-lg-2"></div>
+                </div>
+                <!-- END OF PAGE INTRO -->
+
+                <br>
+
+                <div class="division-banner"></div>
+
+                <br>
+
+                <!-- PAGE CONTENT -->
+                <div class="row" id="page-content">
+                    <div class="col-md-1 col-lg-2"></div>
+
+                    <div class="col-md col-lg">
+                        <p class="page-content-title">
+                            The framework I use in my newest projects
+                        </p>
+
+                        <p class="page-content-text">
+                            The framework currently has no name and is not available for usage in other projects. The reason for that is that I still haven't been able to separate it from the projects.
+                            However when I finish the separation, I'll link it here.
+                            <br>
+                            <br>
+                            <b>Disclaimer: The information found in this article is 100% relevant only to the SkyDocu project. Other projects using this framework might contain different functionalities.</b>
+                        </p>
+
+                        <p class="page-content-text">
+                            The idea for creating my own framework began slightly after I joined the company where I am employed. Here we create web applications in PHP and we utilize Nette framework.
+                            <br>
+                            Ever since I started programming I never liked to use other people's code. Therefore most of my projects only utilized libraries like Bootstrap CSS or jQuery.
+                            <br>
+                            So, because I didn't want to learn Nette and its components, I decided to create my own framework that would follow the MVP.
+                        </p>
+
+                        <p class="page-content-text">
+                            Every application that uses this framework has "index.php" that is the point of all the action. In this script an instance of Application class is created.
+                            <hr>
+                            <i>
+                                Application class is the main class of the whole application. It calls the render engine that is responsible for further UI rendering.
+                                It contains instances of necessary repositories or managers.
+                                <br>
+                                It also has definitions of important functions.
+                            </i>
+                            <hr>
+                            This script is also responsible for displaying the content rendered by the Application class to the user.
+                        </p>
+
+                        <p class="page-content-subtitle">
+                            UI
+                        </p>
+
+                        <p class="page-content-text">
+                            UI is divided into modules that allows separation of administration from the general UI.
+                            <br>
+                            Each module is further divided into presenters.
+                            <br>
+                            Every presenter can further describe more UIs. E.g.: LoginPresenter can be responsible for the login screen UI as well as the <i>forgot password</i> UI.
+                            <br>
+                            Each UI has its own template that must exist. This template can utilize variables:
+                            <br>
+                            <code>
+                                $PAGE_TITLE$
+                            </code>
+                            <br>
+                            If no definition for the variable exists it is displayed in its raw form -> what you see.
+                            <br>
+                            <br>
+                            However templates can also define components:
+                            <br>
+                            <code>
+                                $component COMPONENT_NAME$
+                            </code>
+                            <br>
+                            Components must have a definition otherwise exception is displayed.
+                        </p>
+
+                        <p class="page-content-text">
+                            There are 4 types of functions available to the user in the presenters.
+                            <br>
+                            They are:
+                            <ul>
+                                <li>action&lt;Action&gt;()</li>
+                                <li>handle&lt;View/Action&gt;()</li>
+                                <li>render&lt;View&gt;()</li>
+                                <li>createComponent&lt;ComponentName&gt;()</li>
+                            </ul>
+                            <br>
+                            <b>action&lt;Action&gt;()</b> is called only in AJAX requests.
+                            <br>
+                            <b>handle&lt;View/Action&gt;()</b> is called before render&lt;View&gt;() and can handle form submit, user redirect, etc...
+                            <br>
+                            <b>render&lt;View&gt;()</b> is called after handle&lt;View/Action&gt;() and is intended for filling template variables.
+                            <br>
+                            <b>createComponent&lt;ComponentName&gt;()</b> is called only if the template contains a component. This method must return an instance of the IRenderable interface
+                            that "tags" the implementing class as renderable and calls the class' <i>render()</i> function.
+                        </p>
+
+                        <p class="page-content-subtitle">
+                            Database operations
+                        </p>
+
+                        <p class="page-content-text">
+                            Every time the application is instantiated the connection to the database server is created. There usually is one single connection to the database.
+                            <br>
+                            Low-level API methods are defined in Repositories (classes that extend the ARepository abstract class). The repositories <u>do not check rights</u>.
+                            <br>
+                            High-level API methods are defined in Managers (classes that extend the AManager abstract class). The managers are intended for usage with <u>right checking</u>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-1 col-lg-2"></div>
+                </div>
+                <!-- END OF PAGE CONTENT -->
+
+                <br>
+
+                <div class="division-banner"></div>
+
+                <br>
+            </div>
+        </div>
+    </body>
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-1 col-lg-2"></div>
+
+            <div class="col-md col-lg">
+                <!-- FOOTER DATA -->
+
+                <p class="footer-text">
+                    Copyright &copy; <span id="footer-text-date"></span> Lukas Velek
+                </p>
+
+                <!-- END OF FOOTER DATA -->
+            </div>
+
+            <div class="col-md-1 col-lg-2"></div>
+        </div>
+
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript">
+            isProjects = true;
+            init();
+        </script>
+    </footer>
+</html>
